@@ -12,7 +12,7 @@ int main(){
 	file.close();
 	file.open("sample.txt",ios::in);
 	while(file.eof()==0){
-		getline(cin,ch);
+		getline(file,ch);
 		cout<<ch<<endl;
 	}
 	file.close();
